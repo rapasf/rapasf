@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulation</title>
+    <style>
+      /* Basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      h2 {
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2rem;
+      }
+
+      /* Video embed container */
+      .video-container {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        max-width: 80%; /* Set the maximum width to 80% of the page width */
+        margin: 0 auto; /* Center the video on the page */
+        background: #000;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-bottom: 33%; /* 56.25%16:9 aspect ratio */
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+      }
+
+      /* Button styling */
+      .button-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 18px;
+        background-color: #000000;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 123, 255, 0.4);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #000000;
+        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+      }
+
+      /* Modal (banner) styling */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.8
+        ); /* Black background with opacity */
+      }
+
+      .modal-content {
+        position: relative;
+        margin: 1% auto;
+        padding: 1px;
+        width: 80%;
+        max-width: 700px;
+        background-color: black;
+        border-radius: 1px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .modal-content img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+      }
+
+      .close-btn:hover {
+        color: red;
+      }
+
+      /* Footer styling */
+      footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #555;
+      }
+		/* Style for the button */
+        .back-button {
+            position: absolute; /* or use fixed for always visible */
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #f4f4f4; /* Change design */
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+	<br><br>
+	<a href="main2024_1.html" class="back-button">← Back</a>
+</head>
+      <body>
+	    <h1>Simulation</h1>
+        <!-- wp:heading -->
+        <h2>F1</h2>
+        <!-- /wp:heading -->
+
+        <div class="video-container">
+          <iframe
+            src=https://youtube.com/embed/JaKRaQp-WiA"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- Button -->
+        <div class="button-container">
+          <button class="btn" onclick="openModal('imageModal1')">
+            Show solution
+          </button>
+        </div>
+
+        <div id="imageModal1" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('imageModal1')"
+              >&times;</span
+            >
+            <img src="decisions\f1.jpg" alt="F1 Solution" />
+          </div>
+        </div>
+
+        <!-- wp:heading -->
+        <h2>F2</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:embed {"url":""https://youtube.com/embed/UlkxnEIDJY4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+        <div class="video-container">
+          <iframe
+            src="https://youtube.com/embed/3i3SweTy61I
+	"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="button-container">
+          <button class="btn" onclick="openModal('imageModal2')">
+            Show solution
+          </button>
+        </div>
+
+        <div id="imageModal2" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('imageModal2')"
+              >&times;</span
+            >
+            <img src="decisions\f2.jpg" alt="F2 Solution" />
+          </div>
+        </div>
+
+        <!-- wp:heading -->
+        <h2>F3</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:embed {"url":""https://youtube.com/embed/thPZWcxLMYs","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+        <div class="video-container">
+          <iframe
+            src="https://youtube.com/embed/gMtlcjHPyBo
+	"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="button-container">
+          <button class="btn" onclick="openModal('imageModal3')">
+            Show solution
+          </button>
+        </div>
+
+        <div id="imageModal3" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('imageModal3')"
+              >&times;</span
+            >
+            <img src="decisions\f3.jpg" alt="F3 Solution" />
+          </div>
+        </div>
+
+        <!-- wp:heading -->
+        <h2>F4</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:embed {"url":""https://youtube.com/embed/mx477i3miEo","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+        <div class="video-container">
+          <iframe
+            src="https://youtube.com/embed/CEKaQgxqSqs
+	"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="button-container">
+          <button class="btn" onclick="openModal('imageModal4')">
+            Show solution
+          </button>
+        </div>
+
+        <div id="imageModal4" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('imageModal4')"
+              >&times;</span
+            >
+            <img src="decisions\f4.jpg" alt="F4 Solution" />
+          </div>
+        </div>
+
+        <!-- wp:heading -->
+        <h2>F5</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:embed {"url":""https://youtube.com/embed/zaVxvsODCe8","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+        <div class="video-container">
+          <iframe
+            src="https://youtube.com/embed/mrQO6OmWbkI
+	"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="button-container">
+          <button class="btn" onclick="openModal('imageModal5')">
+            Show solution
+          </button>
+        </div>
+
+        <div id="imageModal5" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('imageModal5')"
+              >&times;</span
+            >
+            <img src="decisions\f5.jpg" alt="F5 Solution" />
+          </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+          <p>© 2024 F1 Page</p>
+        </footer>
+
+        <script>
+          // Function to open the modal
+          // Open Modal with dynamic input
+          function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+          }
+
+          // Close Modal with dynamic input
+          function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+          }
+          // Close the modal if the user clicks outside the modal content
+          window.onclick = function (event) {
+            const modals = document.getElementsByClassName("modal");
+            for (let i = 0; i < modals.length; i++) {
+              if (event.target === modals[i]) {
+                modals[i].style.display = "none";
+              }
+            }
+          };
+        </script>
+      </body>
+    </html>
+  </head>
+</html>
