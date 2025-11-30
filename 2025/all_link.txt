@@ -1,3 +1,15 @@
+G10	https://youtube.com/embed/VV42oLcjlLs
+G9	https://youtube.com/embed/jK5NAu6fejE
+G8	https://youtube.com/embed/Q_rfnRqJy9I
+G7	https://youtube.com/embed/vKCM5ooPaCY
+G6	https://youtube.com/embed/7WrF4o3dToE
+G5	https://youtube.com/embed/jegSQ6dnBi8
+G4	https://youtube.com/embed/A8_wUav0Yxs
+G3	https://youtube.com/embed/7lHSme7DfhU
+G2	https://youtube.com/embed/1nRk-dZGfcI
+G1	https://youtube.com/embed/cI1Lw_D3FcI
+F4	https://youtube.com/embed/y5SMNUgJBrI
+F3	https://youtube.com/embed/w5NJik0-vsU
 F2	https://youtube.com/embed/kQXpnixWUSg
 F1	https://youtube.com/embed/r1ZlyuJQF1Y
 E15	https://youtube.com/embed/tk9dqgVfGfc
