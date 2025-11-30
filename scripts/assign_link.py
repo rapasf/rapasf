@@ -4,8 +4,8 @@ import re
 folder_path = f"2025/"
 
 CSV_FILE = f"{folder_path}all_links.csv"
-HTML_FILE = f"{folder_path}Simulation.html"
-OUTPUT_FILE = f"{folder_path}Simulation_2.html"
+HTML_FILE = f"{folder_path}Illegal_use_of_arms.html"
+OUTPUT_FILE = f"{folder_path}Illegal_use_of_arms_2.html"
 
 # Load links from CSV into dictionary: {"A1": "link", "A2": "link", ...}
 links = {}
